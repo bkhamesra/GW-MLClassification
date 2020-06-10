@@ -1,0 +1,1 @@
+Table[{w, Re[amp$534479[w]*Exp[I*pha$534479[w]]], -Im[amp$534479[w]*Exp[I*pha$534479[w]]]}, {w, $Failed, 10, 10}]

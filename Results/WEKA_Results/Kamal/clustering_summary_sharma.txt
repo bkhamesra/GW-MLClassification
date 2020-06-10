@@ -1,0 +1,3 @@
+I performed kmeans and EM clustering with mostly 3  clusters. It will be a good idea if the clustering algorithms can predict the approximate types of systems.
+If it is close to 3 then awesome. That means a clustering algorithm is good at identifying the number of kinds of black hole mergers based on the gravitational wave data.
+ 

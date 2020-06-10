@@ -1,0 +1,43 @@
+files-in-error-series,-1
+INSPIRE-bibtex-keys,Jani:2016wkt
+NR-code,MAYA
+point-of-contact-email,deirdre.shoemaker@physics.gatech.edu
+object1,BH
+object2,BH
+spin1y,-0.039237750000000002
+spin1x,-0.69888148000000005
+spin1z,-0.0038025899999999998
+modification-date,2017-06-16
+production-run,1
+alternative-names,D8_q2.00_a0.7_0.0_th090_ph120_m120
+Contact Person,Deirdre Shoemaker
+Format,1
+LNhaty,0.050868469999999999
+LNhatx,-0.01273899
+LNhatz,0.99862410999999995
+mean_anomaly,3.1760162474106206
+spin-type,Precessing
+type,NRinjection
+comparable-simulation,GT0560
+init_sep,7.4087649076600952
+NR-group,Georgia Tech
+spin2x,0.0
+spin2y,0.0
+spin2z,0.0
+eccentricity,0.14052837096181095
+nhatz,0.02366772
+simulation-type,precessing
+nhatx,0.97603918000000001
+nhaty,-0.21630384
+mass1,0.66666667000000002
+name,GT0781
+license,public
+mass2,0.33333332999999998
+Omega,0.082632050743190244
+Lmax,8
+eta,0.22222222
+Warning1,Spin Information not available at t_begin. Will be provided at t=0.
+NR-techniques,"Puncture-ID, BSSN, Psi4-integrated, Finite-Radius-Waveform, ApproxKillingVector-Spin, Christodoulou-Mass"
+PN_approximant,None
+Warning2,Mass Information not available at t_begin. Will be provided at t=0.
+f_lower_at_1MSUN,2669.3715922935362

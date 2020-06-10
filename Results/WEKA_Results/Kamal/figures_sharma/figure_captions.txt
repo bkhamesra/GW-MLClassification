@@ -1,0 +1,3 @@
+ 
+This figure 1_post_PCA....  shows multilayer perceptron classifier data. It is clear that distribution of "Precessing" systems is very clearly separated from other two labels in the principal component planes.  
+Figure4 : This is all the plots of principal component planes. Figures show distribution of data points along with the class as colors.
