@@ -10,12 +10,21 @@ from metadata import metadata
 
 
 def read_attr(filepath, outfile):
+    '''Extract the metadata attributes from h5 file
+    
+    Parameters - 
+    filepath (str) - path of waveform h5 file
+    outfile (str) - path of metadata output file
+    '''
+    
+    #Load waveform h5 file and read the attributes
     fileh5 = h5py.File(filepath)
     key = fileh5.attrs.keys()
 #    print key, fileh5.attrs.keys()
     values = [fileh5.attrs[k] for k in key]
     atrb = dict(zip( key, values))
 
+    #Compute the spin type and save to attributes
     spin1 = np.array((atrb['spin1x'], atrb['spin1y'], atrb['spin1z']))
     spin2 = np.array((atrb['spin2x'], atrb['spin2y'], atrb['spin2z']))
 
@@ -23,16 +32,18 @@ def read_attr(filepath, outfile):
     print "\n spin2 = ", spin2
 
     if np.count_nonzero(spin1)==0 and np.count_nonzero(spin2)==0:
-	atrb['spin-type']='NonSpinning'
+        atrb['spin-type']='NonSpinning'
     elif np.count_nonzero(spin1[0:2])>0 or np.count_nonzero(spin2[0:2]>0):
-	atrb['spin-type']='Precessing'
+        atrb['spin-type']='Precessing'
     else:
-	atrb['spin-type'] = 'AlignedSpins'
+        atrb['spin-type'] = 'AlignedSpins'
     print("\n spin type = {} \n \n".format(atrb['spin-type'] 	))
+    
+    #Save the metadata attributes as text file
     output_file = open(outfile, 'w')
     output = csv.writer(output_file)
     for key, val in atrb.items():
-	output.writerow([key,val])
+        output.writerow([key,val])
     output_file.close()
     #return atrb 
     fileh5.close()
@@ -45,9 +56,9 @@ filepath = sorted(glob.glob("/localdata/bkhamesra3/LIGO_Waveforms/GW_Waveforms/G
 output_dir = "/localdata/bkhamesra3/LIGO_Waveforms/GW_Waveforms/Metadata"
 
 for h5 in filepath:
-	print("{} Starting \n".format(os.path.basename(h5)))	
-	gt_tag = os.path.basename(h5).split('.')[0]
-	outfile_name = os.path.join(output_dir,"Metadata_"+gt_tag+".csv")
-
-	attrib = read_attr(h5, outfile_name)
+    print("{} Starting \n".format(os.path.basename(h5)))	
+    gt_tag = os.path.basename(h5).split('.')[0]
+    outfile_name = os.path.join(output_dir,"Metadata_"+gt_tag+".csv")
+    
+    attrib = read_attr(h5, outfile_name)
 	
