@@ -19,7 +19,7 @@ In this work, we look at the gravitational wave signatures emitted by binary bla
 
 
 
-Directory And File Structure - 
+## Directory And File Structure - 
 
 1. Data - This directory contains the dataset used for this work. 
    * WaveformData - Text data obtained from original NR waveforms h5 files (obtained from publicly available dataset from each group's websites). Here we only extract the most dominant (2,2) mode. 
