@@ -25,9 +25,9 @@ In this work, we look at the gravitational wave signatures emitted by binary bla
    * WaveformData - Text data obtained from original NR waveforms h5 files (obtained from publicly available dataset from each group's websites). Here we only extract the most dominant (2,2) mode. 
    * Metadata     - Contains information about each waveform and initial binary system such as  mass ratio, spins, eccentricity etc
    * FilteredData - After cleaning the waveform data, the cleaned data is stored in this directory. 
-2. Scripts - 
+2. Scripts - Check the Jupyter notebooks for detailed analysis and results
    * Bhavesh - Contains Jupyter nobooks and other python scripts for data cleaning  
 3. Results - 
    * WEKA_Results - This includes Results obtained using WEKA
-   * Report - A detailed report explaining the methodolofy and final results. 
-   * Poster - A ppt file of poster presented at Georgia Regional Astronomy Meeting, 2017. 
+   * Poster - A ppt file of poster presented at Georgia Regional Astronomy Meeting, 2017.
+    
