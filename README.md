@@ -6,12 +6,16 @@
 3. Ravindranadh Bolla
 
 ## Goal - 
+Gravitational waves are ripples in space and time created by the motion of massive accelerated object(s). Their recent detection in 2015 led to complete new way to explore the universe, especially the regions which do not emit strong electromagnetic signatures. One of the strongest sources of gravitational waves are the black hole and neutron stars binary systems. Due to their huge mass and compact size, these objects induce a strong curvature on fabric of space and time.  As these objects rotate around each other, the curvature shifts creating ripples much like the ripples generate in water due to motion of two boats in a circle. These ripples contains the information of their sources and can travel for millions of light years without loosing their original form. Today, using gravitational wave detectors, we can learn more about the universe and locate several hidden objects such as black holes. 
 
-In this work, we look at the gravitational wave signatures emitted by binary black holes and use Supervised Machine Learning methods to learn more about the source of these waves. A binary black hole system can be described in terms the 10 intrinsic parameters - two component masses, two spin vectors (total 6 spin components), initial orbital frequency and initial eccentricity. These black holes orbit around each other creating pertubation in spacetime which we observe as gravitational waves. A question of interest is then how can we determine the source and its properties from the observed gravitational wave signal.
+In this work, we look at the gravitational wave signatures emitted by binary black holes using Supervised Machine Learning methods. A binary black hole system can be described in terms the 10 intrinsic parameters - two component masses, two spin vectors (total 6 spin components), initial orbital frequency and initial eccentricity. One of the primary ways to distinguish these systems is based on their spins - Non Spinning where both black holes are non-rotating, Aligned-Spin, where the initial spins of each black holle are only in z direction, perpendicular to the orbital plane, and Precessing where spins can be in any direction. We would like to apply Supervised Machine Learning tools to see if such classification can be achieved using machine learning methods. 
 
-Here we attempt to use Machine Learning to address part of this question. The aim of this project is two fold - 
-1. Identify the spin-type of system 
-2. Identify the ratio of masses 
+## Methodology - 
+
+* Data Ceaning and Extraction - Python 
+* Feature Extraction and Feature Selection - Python (sklearn library), Weka
+* Supervised ML - Python (sklearn), Weka
+* Unsupervised Learning - Weka
 
 
 
@@ -22,7 +26,7 @@ Directory And File Structure -
    * Metadata     - Contains information about each waveform and initial binary system such as  mass ratio, spins, eccentricity etc
    * FilteredData - After cleaning the waveform data, the cleaned data is stored in this directory. 
 2. Scripts - 
-   * 
+   * Bhavesh - Contains Jupyter nobooks and other python scripts for data cleaning  
 3. Results - 
    * WEKA_Results - This includes Results obtained using WEKA
    * Report - A detailed report explaining the methodolofy and final results. 
