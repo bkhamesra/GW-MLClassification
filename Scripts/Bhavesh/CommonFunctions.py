@@ -231,7 +231,7 @@ def func_PCA(n_comp, data, rs):
     return transformed_data, time_pca
 
 
-def ml_classifier(clf, params, inputdata, outputdata, trainsize, pca_comp, rs, plot_decisiontree=False, verbose=0,parallelize=False):
+def ml_classifier(clf, params, inputdata, outputdata, trainsize, pca_comp, rs, cv=5, plot_decisiontree=False, verbose=0,parallelize=False):
     '''Compute the best optimal parameters and scores for classifier clf using GridSearch algorithm 
     and apply it to standardized data. 
     ----------------------------------------------------------------------------------------
@@ -282,7 +282,7 @@ def ml_classifier(clf, params, inputdata, outputdata, trainsize, pca_comp, rs, p
     score_train = search.score(data_train_pca, y_train)
     
     #Cross validation score for classifier with best parameters
-    cv_scores = cross_val_score(search, data_train_pca, y_train, cv=5)
+    cv_scores = cross_val_score(search, data_train_pca, y_train, cv=10)
     score_test = search.score(data_test_pca,y_test)
     
     
