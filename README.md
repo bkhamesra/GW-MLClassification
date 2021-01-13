@@ -26,8 +26,9 @@ In this work, we look at the gravitational wave signatures emitted by binary bla
    * Metadata     - Contains information about each waveform and initial binary system such as  mass ratio, spins, eccentricity etc
    * FilteredData - After cleaning the waveform data, the cleaned data is stored in this directory. 
 2. Scripts - Check the Jupyter notebooks for detailed analysis and results
-   * Bhavesh - Contains Jupyter nobooks and other python scripts for data cleaning  
+   * Notebooks - Contains Jupyter nobooks which implements the data analysis and Supervised Machine Learning
+   * HTML Files - Notebooks saved in HTML format
+   * Scripts - Additional scripts used to clear the data
 3. Results - 
-   * WEKA_Results - This includes Results obtained using WEKA
-   * Poster - A ppt file of poster presented at Georgia Regional Astronomy Meeting, 2017.
+   * Presentation
     
