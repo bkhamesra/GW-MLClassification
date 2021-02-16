@@ -1,4 +1,0 @@
-These two files have a different amount of data.
-They cannot be used with other files in WEKA as they have different number of attributes. So I have kept them here.
---your truly 
-Kamal
